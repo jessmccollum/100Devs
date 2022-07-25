@@ -24,4 +24,5 @@ aside p {
     color: white;
     font-size: 18px;
     text-decoration: underline red;
+    /* border-bottom: 2px solid red; This one has more control over it, but both work. */
 }
