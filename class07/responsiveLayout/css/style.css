@@ -17,26 +17,47 @@
 	clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
-}
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+header, footer {
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  clear: both;
 }
 
-footer {
-
+section {
+  height: 500px;
+  width: 33.333%;
+  border: 1px solid black;
+  float: left;
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* MEDIA QUERIES
 /*******************************************/
+
+@media screen and (min-width: 901px) {
+  header, footer, section {
+    background: purple;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header, footer,  section {
+    background: blue;
+  }
+  section {
+    height: 200px;
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header, footer, section {
+    background: orange;
+  }
+}
