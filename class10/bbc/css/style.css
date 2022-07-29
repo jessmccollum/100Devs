@@ -21,21 +21,33 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
-}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+header * , main *, section > section {
+     float: left;
 }
 
-footer {
-
+li {
+     list-style: none;
 }
+
+section > section {
+     width: 33.33%;
+}
+
+main > section, main section > section {
+     width: 50%;
+}
+
+main > section:first-child {
+     width: 100%
+}
+
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
